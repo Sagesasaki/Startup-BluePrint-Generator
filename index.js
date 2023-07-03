@@ -2,6 +2,9 @@ import { Configuration, OpenAIApi} from "openai";
 import express from "express"; // express is used when js + web apps, and can only be used in node js
 import bodyParser from "body-parser";
 import cors from "cors";
+import dotenv from "dotenv";
+
+dotenv.config();
 
 const configuration = new Configuration({
     organization: process.env.OPENAI_ORGANIZATION,
